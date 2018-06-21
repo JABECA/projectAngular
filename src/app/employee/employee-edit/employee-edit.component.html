@@ -1,0 +1,52 @@
+<h1>Edit Employee</h1>
+
+
+<form (submit)="update()">
+  <div style="padding: 2px;">
+    <input placeholder="Name"
+           type="text"
+           name="name"
+           [(ngModel)]="editEmployee.name">
+
+  </div>
+  <div style="padding: 2px;">
+    <input placeholder="Company"
+           type="text"
+           name="company"
+           [(ngModel)]="editEmployee.company">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Age"
+           type="text"
+           name="age"
+           [(ngModel)]="editEmployee.age">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Birthday"
+           type="text"
+           name="birthday"
+           [(ngModel)]="editEmployee.birthday">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Favorite Color"
+           type="text"
+           name="favoriteColor"
+           [(ngModel)]="editEmployee.favoriteColor">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Project"
+           type="text"
+           name="project"
+           [(ngModel)]="editEmployee.project">
+  </div>
+  <div style="padding: 2px;">
+    <button class="btn btn-primary"
+            type="submit">
+      Update
+    </button>
+  </div>
+</form>

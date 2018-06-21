@@ -1,0 +1,31 @@
+<h1>Edit Project</h1>
+
+
+<form (submit)="update()">
+  <div style="padding: 2px;">
+    <input placeholder="Name"
+           type="text"
+           name="name"
+           [(ngModel)]="editProject.name">
+
+  </div>
+  <div style="padding: 2px;">
+    <input placeholder="Team Size"
+           type="text"
+           name="teamSize"
+           [(ngModel)]="editProject.teamSize">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Client Name"
+           type="text"
+           name="clientName"
+           [(ngModel)]="editProject.clientName">
+  </div>
+  <div style="padding: 2px;">
+    <button class="btn btn-primary"
+            type="submit">
+        Update
+      </button>
+  </div>
+</form>

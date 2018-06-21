@@ -1,0 +1,51 @@
+<h1>Create new Employee</h1>
+
+<form (submit)="create()">
+  <div style="padding: 2px;">
+    <input placeholder="Name"
+           type="text"
+           name="name"
+           [(ngModel)]="newEmployee.name">
+
+  </div>
+  <div style="padding: 2px;">
+    <input placeholder="Company"
+           type="text"
+           name="company"
+           [(ngModel)]="newEmployee.company">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Age"
+           type="text"
+           name="age"
+           [(ngModel)]="newEmployee.age">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Birthday"
+           type="text"
+           name="birthday"
+           [(ngModel)]="newEmployee.birthday">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Favorite Color"
+           type="text"
+           name="favoriteColor"
+           [(ngModel)]="newEmployee.favoriteColor">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Project"
+           type="text"
+           name="project"
+           [(ngModel)]="newEmployee.project">
+  </div>
+  <div style="padding: 2px;">
+    <button class="btn btn-primary"
+            type="submit">
+    Send
+  </button>
+  </div>
+</form>

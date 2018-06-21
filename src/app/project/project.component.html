@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+<!-- <pre>{{projects | json}}</pre> -->
+
+<!-- //envio el evento para crear un nuevo usuario en user component (el padre) crea usuarios-->
+<!-- salida -->
+
+<div class="row"
+     style="padding: 10px">
+
+
+  <div class="col-md-6">
+    <app-project-list [projects]="projects"
+                      (destroyProjectEvent)="destroy($event)"
+                      (updateProjectEvent)="update($event)"></app-project-list>
+  </div>
+
+  <div class="col-md-4"
+       style="margin-left: 30px;">
+    <app-project-new (createNewProjectEvent)="create($event)">
+    </app-project-new>
+  </div>
+
+</div>
+<!-- entrada -->

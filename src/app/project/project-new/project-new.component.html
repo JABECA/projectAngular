@@ -1,0 +1,30 @@
+<h2 style="padding: 10px">Create new project</h2>
+
+<form (submit)="create()">
+  <div style="padding: 2px;">
+    <input placeholder="Project Name"
+           type="text"
+           name="name"
+           [(ngModel)]="newProject.name">
+
+  </div>
+  <div style="padding: 2px;">
+    <input placeholder="Team Size"
+           type="text"
+           name="teamSize"
+           [(ngModel)]="newProject.teamSize">
+  </div>
+
+  <div style="padding: 2px;">
+    <input placeholder="Client Name"
+           type="text"
+           name="clientName"
+           [(ngModel)]="newProject.clientName">
+  </div>
+  <div style="padding: 3px;">
+    <button class="btn btn-primary"
+            type="submit">
+    Send
+  </button>
+  </div>
+</form>
