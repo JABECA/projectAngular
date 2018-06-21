@@ -5,7 +5,7 @@ import {
 	OnInit,
 	Output
 	} from '@angular/core';
-import { Project } from '../Project';
+import { Project } from '../project';
 
 @Component({
 	selector: 'app-project-edit',
