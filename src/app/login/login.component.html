@@ -23,7 +23,12 @@
     </div>
     <div class="form-group">
       <button type="submit"
-              class="btn btn-primary btn-block">Log in</button>
+              class="btn btn-primary btn-block">Log in</button><br>
+      <a (click)="showAbout()">Contact me</a>
+    </div>
+    <div *ngIf="(show)">
+      <p>Email: alejndromym@utp.edu.co</p>
+      <p>Cel: 314 5716480</p>
     </div>
 
   </form>

@@ -8,14 +8,21 @@ import { Router } from '@angular/router';
 	styleUrls: [ './login.component.css' ],
 })
 export class LoginComponent implements OnInit {
+	show = false;
+
 	constructor(private Router: Router) {}
 
 	ngOnInit() {}
+
+	showAbout() {
+		this.show = !this.show;
+	}
 
 	login(form: NgForm) {
 		console.log(form.value);
 		const email = form.value.username;
 		const password = form.value.password;
+
 		if (email === 'alejandromym@utp.edu.co' && password === '123') {
 			localStorage.setItem('email', form.value.username);
 			localStorage.setItem('password', form.value.password);
